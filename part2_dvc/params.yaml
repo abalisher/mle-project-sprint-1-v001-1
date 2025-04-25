@@ -1,0 +1,16 @@
+index_col: 'id'
+target_col: 'price'
+one_hot_drop: 'if_binary'
+auto_class_weights: 'Balanced'
+n_splits: 5
+metrics:
+  - r2
+  - neg_mean_absolute_error
+  - neg_root_mean_squared_error
+n_jobs: -1
+
+catboost_params:
+  iterations: 100
+  depth: 6
+  learning_rate: 0.1
+  verbose: 0

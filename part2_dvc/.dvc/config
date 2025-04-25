@@ -1,0 +1,6 @@
+[core]
+    remote = my_storage_2
+['remote "my_storage_2"']
+    url = s3://s3-student-mle-20241125-1fb4544208
+    endpointurl = https://storage.yandexcloud.net
+    version_aware = true
